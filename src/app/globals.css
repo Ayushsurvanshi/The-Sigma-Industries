@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 56% 91%; /* #F5F5DC - Light Beige */
+    --foreground: 24 22% 21%;
+    --card: 40 56% 91%;
+    --card-foreground: 24 22% 21%;
+    --popover: 40 56% 91%;
+    --popover-foreground: 24 22% 21%;
+    --primary: 43 100% 36%; /* #B8860B - Muted Gold */
+    --primary-foreground: 60 9% 98%;
+    --secondary: 40 33% 85%;
+    --secondary-foreground: 24 22% 21%;
+    --muted: 40 33% 85%;
+    --muted-foreground: 24 10% 45%;
+    --accent: 20 59% 45%; /* #A0522D - Dark Orange */
+    --accent-foreground: 60 9% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9% 98%;
+    --border: 43 25% 70%;
+    --input: 43 25% 70%;
+    --ring: 43 100% 36%;
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 240 33% 10%; /* Dark Navy Blue */
+    --foreground: 240 10% 80%; /* Light Grey */
+    --card: 240 33% 13%;
+    --card-foreground: 240 10% 80%;
+    --popover: 240 33% 13%;
+    --popover-foreground: 240 10% 80%;
+    --primary: 43 100% 60%; /* Brighter Gold */
+    --primary-foreground: 240 25% 10%;
+    --secondary: 240 20% 20%;
+    --secondary-foreground: 240 10% 80%;
+    --muted: 240 20% 20%;
+    --muted-foreground: 240 5% 64%;
+    --accent: 20 100% 65%; /* Brighter Orange */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9% 98%;
+    --border: 240 20% 25%;
+    --input: 240 20% 25%;
+    --ring: 43 100% 60%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
